@@ -1,0 +1,1125 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wpp-email-editor 1.0.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ru_RU\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "<p style=\"margin:0;\">Custom HTML</p>"
+msgstr "<p style=\"margin:0;\">Свой HTML</p>"
+
+msgid "<p>Hi {customer_first_name},</p><p>An account has been created for you at {site_title}. Set a password and you can see your orders any time.</p>"
+msgstr "<p>Здравствуйте, {customer_first_name}.</p><p>Для вас создан аккаунт в {site_title}. Задайте пароль — и заказы будут под рукой.</p>"
+
+msgid "<p>Hi {customer_first_name},</p><p>Here is an update from {site_title}. The details we have are below.</p>"
+msgstr "<p>Здравствуйте, {customer_first_name}.</p><p>Новость от {site_title}. Подробности, которые у нас есть, ниже.</p>"
+
+msgid "<p>Hi {customer_first_name},</p><p>Order #{order_number} is complete. We hope it is exactly what you wanted — and if it is not, reply to this email.</p>"
+msgstr "<p>Здравствуйте, {customer_first_name}.</p><p>Заказ #{order_number} выполнен. Надеемся, всё как вы хотели. Если нет — ответьте на это письмо.</p>"
+
+msgid "<p>Hi {customer_first_name},</p><p>Someone asked to reset the password for {user_login}. If that was you, use the button. If it was not, you can ignore this email.</p>"
+msgstr "<p>Здравствуйте, {customer_first_name}.</p><p>Кто-то запросил сброс пароля для {user_login}. Если это вы — нажмите кнопку. Если нет — просто проигнорируйте письмо.</p>"
+
+msgid "<p>Hi {customer_first_name},</p><p>Thank you. We have received order #{order_number} and we are getting it ready. This email is the receipt — the next one arrives when it ships.</p>"
+msgstr "<p>Здравствуйте, {customer_first_name}.</p><p>Спасибо. Заказ #{order_number} получен, мы его собираем. Это письмо — чек. Следующее придёт, когда заказ отправится.</p>"
+
+msgid "<p>Hi {customer_first_name},</p><p>Write the note you actually want them to read.</p>"
+msgstr "<p>Здравствуйте, {customer_first_name}.</p><p>Напишите здесь то, что человек действительно прочитает.</p>"
+
+msgid "<p>You have a new order from {customer_full_name} — #{order_number}, placed on {order_date}.</p>"
+msgstr "<p>Новый заказ от {customer_full_name} — #{order_number}, от {order_date}.</p>"
+
+msgid "A code worth coming back for"
+msgstr "Код, ради которого возвращаются"
+
+msgid "A message about your order."
+msgstr "Сообщение о вашем заказе."
+
+msgid "A note about order #{order_number}"
+msgstr "Заметка к заказу #{order_number}"
+
+msgid "A note from us"
+msgstr "Заметка от нас"
+
+msgid "A password reset was requested for your account."
+msgstr "Запрошен сброс пароля для вашего аккаунта."
+
+msgid "A person replies"
+msgstr "Отвечает человек"
+
+msgid "A picture from the media library"
+msgstr "Картинка из медиатеки"
+
+msgid "A product was backordered"
+msgstr "Товар ушёл в предзаказ"
+
+msgid "A quiet line"
+msgstr "Тихая линия"
+
+msgid "A refund was issued for order #{order_number}."
+msgstr "По заказу #{order_number} оформлен возврат."
+
+msgid "A short title"
+msgstr "Короткий заголовок"
+
+msgid "A small product row"
+msgstr "Небольшая полка товаров"
+
+msgid "AGAIN10"
+msgstr "ЕЩЁ10"
+
+msgid "Account action"
+msgstr "Действие с аккаунтом"
+
+msgid "Accounts"
+msgstr "Аккаунты"
+
+msgid "Additional content"
+msgstr "Дополнительный текст"
+
+msgid "Additional content from WooCommerce → Settings → Emails will appear here."
+msgstr "Здесь появится дополнительный текст из WooCommerce → Настройки → Письма."
+
+msgid "Address, legal, a quiet goodbye"
+msgstr "Адрес, реквизиты, тихое до свидания"
+
+msgid "Addresses"
+msgstr "Адреса"
+
+msgid "Admin"
+msgstr "Администратор"
+
+msgid "Align"
+msgstr "Выравнивание"
+
+msgid "Alt text"
+msgstr "Альтернативный текст"
+
+msgid "An account has been created for you at {site_title}. Set a password and you can see your orders any time."
+msgstr "Для вас создан аккаунт в {site_title}. Задайте пароль — и заказы будут под рукой."
+
+msgid "An account was created for you at {site_title}."
+msgstr "Для вас создан аккаунт в {site_title}."
+
+msgid "An update from {site_title}"
+msgstr "Новость от {site_title}"
+
+msgid "Anna"
+msgstr "Анна"
+
+msgid "Anna Sokolova"
+msgstr "Анна Соколова"
+
+msgid "Apply brand to this email"
+msgstr "Применить стиль к этому письму"
+
+msgid "Arial"
+msgstr "Arial"
+
+msgid "Background"
+msgstr "Фон"
+
+msgid "Backorder: {product_name}"
+msgstr "Предзаказ: {product_name}"
+
+msgid "Billing"
+msgstr "Оплата"
+
+msgid "Billing and shipping"
+msgstr "Оплата и доставка"
+
+msgid "Billing heading"
+msgstr "Заголовок оплаты"
+
+msgid "Brand"
+msgstr "Стиль"
+
+msgid "Brand applied"
+msgstr "Стиль применён"
+
+msgid "Brand kit"
+msgstr "Фирменный стиль"
+
+msgid "Brand saved"
+msgstr "Стиль сохранён"
+
+msgid "Button"
+msgstr "Кнопка"
+
+msgid "Button text"
+msgstr "Текст кнопки"
+
+msgid "Card"
+msgstr "Карта"
+
+msgid "Card background"
+msgstr "Фон карточки"
+
+msgid "Center"
+msgstr "По центру"
+
+msgid "Ceramic kettle"
+msgstr "Керамический чайник"
+
+msgid "Choose image"
+msgstr "Выбрать изображение"
+
+msgid "Close"
+msgstr "Закрыть"
+
+msgid "Code"
+msgstr "Код"
+
+msgid "Color"
+msgstr "Цвет"
+
+msgid "Color: sand"
+msgstr "Цвет: песок"
+
+msgid "Columns"
+msgstr "Колонки"
+
+msgid "Confirm it is you, and we will let you choose a new password."
+msgstr "Подтвердите, что это вы, и сможете задать новый пароль."
+
+msgid "Content"
+msgstr "Содержание"
+
+msgid "Copy design from…"
+msgstr "Скопировать макет из…"
+
+msgid "Corner radius"
+msgstr "Скругление"
+
+msgid "Could not save"
+msgstr "Не удалось сохранить"
+
+msgid "Count"
+msgstr "Количество"
+
+msgid "Coupon"
+msgstr "Купон"
+
+msgid "Courier"
+msgstr "Courier"
+
+msgid "Custom HTML is edited on the right. Open Preview to see it rendered."
+msgstr "Свой HTML правится справа. Откройте просмотр, чтобы увидеть его в письме."
+
+msgid "Customer"
+msgstr "Клиент"
+
+msgid "Customer email"
+msgstr "Почта клиента"
+
+msgid "Customer note"
+msgstr "Заметка покупателя"
+
+msgid "Date"
+msgstr "Дата"
+
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "Demo mode does not send email. Install the plugin in WordPress to send a test."
+msgstr "В демо письма не отправляются. Установите плагин в WordPress, чтобы послать тест."
+
+msgid "Design"
+msgstr "Оформить"
+
+msgid "Design these emails visually — logo, copy, order table, and all — without copying templates into the theme."
+msgstr "Оформите эти письма визуально — логотип, текст, таблица заказа — не копируя шаблоны в тему."
+
+msgid "Design this email"
+msgstr "Оформить это письмо"
+
+msgid "Desktop"
+msgstr "Компьютер"
+
+msgid "Divider"
+msgstr "Разделитель"
+
+msgid "Down"
+msgstr "Ниже"
+
+msgid "Download"
+msgstr "Скачать"
+
+msgid "Download HTML"
+msgstr "Скачать HTML"
+
+msgid "Downloadable product links"
+msgstr "Ссылки на скачивание"
+
+msgid "Downloads"
+msgstr "Загрузки"
+
+msgid "Draft"
+msgstr "Черновик"
+
+msgid "Drafts"
+msgstr "Черновики"
+
+msgid "Drag a block onto the email, or click to append it."
+msgstr "Перетащите блок на письмо или нажмите, чтобы добавить в конец."
+
+msgid "Duplicate"
+msgstr "Дублировать"
+
+msgid "Edit product"
+msgstr "Открыть товар"
+
+msgid "Editor language"
+msgstr "Язык редактора"
+
+msgid "Email"
+msgstr "Письмо"
+
+msgid "Email Editor"
+msgstr "Редактор писем"
+
+msgid "Email width"
+msgstr "Ширина письма"
+
+msgid "Emails"
+msgstr "Письма"
+
+msgid "Empty vertical space"
+msgstr "Пустой отступ"
+
+msgid "English"
+msgstr "English"
+
+msgid "Enter a valid email address."
+msgstr "Введите корректный адрес почты."
+
+msgid "Every order leaves the studio with a paper note, not a plastic insert."
+msgstr "Каждый заказ уходит с бумажной запиской, а не с пластиковой вкладкой."
+
+msgid "Exit focus"
+msgstr "Показать меню"
+
+msgid "Export"
+msgstr "Экспорт"
+
+msgid "Facebook"
+msgstr "Facebook"
+
+msgid "Featured"
+msgstr "Рекомендуемые"
+
+msgid "First name"
+msgstr "Имя"
+
+msgid "Focus mode"
+msgstr "На весь экран"
+
+msgid "Font"
+msgstr "Шрифт"
+
+msgid "Footer"
+msgstr "Подвал"
+
+msgid "For next time"
+msgstr "На следующий раз"
+
+msgid "For the cases the blocks miss"
+msgstr "Когда блоков не хватает"
+
+msgid "Full name"
+msgstr "Полное имя"
+
+msgid "Gap"
+msgstr "Зазор"
+
+msgid "Georgia"
+msgstr "Georgia"
+
+msgid "Grand total"
+msgstr "Итог"
+
+msgid "HTML"
+msgstr "HTML"
+
+msgid "Header"
+msgstr "Шапка"
+
+msgid "Header background"
+msgstr "Фон шапки"
+
+msgid "Header text"
+msgstr "Текст шапки"
+
+msgid "Heading"
+msgstr "Заголовок"
+
+msgid "Height"
+msgstr "Высота"
+
+msgid "Here is an update from {site_title}. The details we have are below."
+msgstr "Новость от {site_title}. Подробности, которые у нас есть, ниже."
+
+msgid "Here is the invoice for order #{order_number}. The details below match what we have on file."
+msgstr "Это счёт по заказу #{order_number}. Ниже то, что есть у нас в заказе."
+
+msgid "Hi {customer_first_name},"
+msgstr "Здравствуйте, {customer_first_name}."
+
+msgid "Hide when empty"
+msgstr "Скрывать, если пусто"
+
+msgid "Horizontal padding"
+msgstr "Отступ по бокам"
+
+msgid "Image"
+msgstr "Изображение"
+
+msgid "Image URL"
+msgstr "Адрес изображения"
+
+msgid "Import"
+msgstr "Импорт"
+
+msgid "Import finished"
+msgstr "Импорт завершён"
+
+msgid "Instagram"
+msgstr "Instagram"
+
+msgid "Intro"
+msgstr "Вступление"
+
+msgid "Invoice for order #{order_number}"
+msgstr "Счёт по заказу #{order_number}"
+
+msgid "Invoice for order #{order_number}."
+msgstr "Счёт по заказу #{order_number}."
+
+msgid "It is on the way"
+msgstr "Уже в пути"
+
+msgid "Item meta"
+msgstr "Свойства товара"
+
+msgid "Kicker"
+msgstr "Надзаголовок"
+
+msgid "Label"
+msgstr "Подпись"
+
+msgid "Last name"
+msgstr "Фамилия"
+
+msgid "Latest products"
+msgstr "Последние товары"
+
+msgid "Layout"
+msgstr "Макет"
+
+msgid "Left"
+msgstr "Слева"
+
+msgid "Left button"
+msgstr "Кнопка слева"
+
+msgid "Left button link"
+msgstr "Ссылка кнопки слева"
+
+msgid "Left image"
+msgstr "Картинка слева"
+
+msgid "Left text"
+msgstr "Текст слева"
+
+msgid "Left title"
+msgstr "Заголовок слева"
+
+msgid "Linen towel"
+msgstr "Льняное полотенце"
+
+msgid "Lines"
+msgstr "Линии"
+
+msgid "Link"
+msgstr "Ссылка"
+
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+msgid "Links and buttons"
+msgstr "Ссылки и кнопки"
+
+msgid "Links, not tracking pixels"
+msgstr "Ссылки, не пиксели слежения"
+
+msgid "Live"
+msgstr "Включено"
+
+msgid "Logo"
+msgstr "Логотип"
+
+msgid "Logo and store name"
+msgstr "Логотип и название магазина"
+
+msgid "Logo width"
+msgstr "Ширина логотипа"
+
+msgid "Lookbook (PDF)"
+msgstr "Лукбук (PDF)"
+
+msgid "Low stock, out of stock, backorder"
+msgstr "Мало, нет, предзаказ"
+
+msgid "Low stock: {product_name}"
+msgstr "Мало на складе: {product_name}"
+
+msgid "Manual"
+msgstr "Вручную"
+
+msgid "Matcha bowl"
+msgstr "Чаша для матча"
+
+msgid "Media library"
+msgstr "Медиатека"
+
+msgid "Mobile"
+msgstr "Телефон"
+
+msgid "More"
+msgstr "Ещё"
+
+msgid "Moscow"
+msgstr "Москва"
+
+msgid "Muted"
+msgstr "Приглушённый"
+
+msgid "Muted text"
+msgstr "Приглушённый текст"
+
+msgid "My account URL"
+msgstr "Ссылка на кабинет"
+
+msgid "New order"
+msgstr "Новый заказ"
+
+msgid "New order #{order_number}"
+msgstr "Новый заказ #{order_number}"
+
+msgid "No emails match that search."
+msgstr "По этому запросу писем нет."
+
+msgid "No image yet"
+msgstr "Изображения пока нет"
+
+msgid "No other saved designs yet."
+msgstr "Других сохранённых макетов пока нет."
+
+msgid "No revisions yet. They appear each time you press Save."
+msgstr "Версий пока нет. Они появляются при каждом нажатии «Сохранить»."
+
+msgid "No social links yet"
+msgstr "Соцсетей пока нет"
+
+msgid "Note from the customer"
+msgstr "Заметка покупателя"
+
+msgid "Note from the store"
+msgstr "Заметка магазина"
+
+msgid "Nothing matches"
+msgstr "Ничего не нашлось"
+
+msgid "Number, date, payment"
+msgstr "Номер, дата, оплата"
+
+msgid "Off in WooCommerce"
+msgstr "Выключено в WooCommerce"
+
+msgid "One clear action"
+msgstr "Одно понятное действие"
+
+msgid "Open editor"
+msgstr "Открыть редактор"
+
+msgid "Open in admin"
+msgstr "Открыть в админке"
+
+msgid "Opening the email…"
+msgstr "Открываем письмо…"
+
+msgid "Order"
+msgstr "Заказ"
+
+msgid "Order #{order_number} failed"
+msgstr "Заказ #{order_number} не оплачен"
+
+msgid "Order #{order_number} failed."
+msgstr "Заказ #{order_number} не оплачен."
+
+msgid "Order #{order_number} from {customer_full_name} failed at payment. It has not been paid."
+msgstr "Заказ #{order_number} от {customer_full_name} не оплачен."
+
+msgid "Order #{order_number} from {customer_full_name} was cancelled."
+msgstr "Заказ #{order_number} от {customer_full_name} отменён."
+
+msgid "Order #{order_number} has been cancelled. If that was a surprise, reply to this email and we will look it up."
+msgstr "Заказ #{order_number} отменён. Если это неожиданность — ответьте на письмо, мы проверим."
+
+msgid "Order #{order_number} is complete"
+msgstr "Заказ #{order_number} выполнен"
+
+msgid "Order #{order_number} is complete."
+msgstr "Заказ #{order_number} выполнен."
+
+msgid "Order #{order_number} is complete. We hope it is exactly what you wanted — and if it is not, reply to this email."
+msgstr "Заказ #{order_number} выполнен. Надеемся, всё как вы хотели. Если нет — ответьте на это письмо."
+
+msgid "Order #{order_number} is confirmed."
+msgstr "Заказ #{order_number} подтверждён."
+
+msgid "Order #{order_number} is on hold"
+msgstr "Заказ #{order_number} на удержании"
+
+msgid "Order #{order_number} is on hold until payment is confirmed. We will email you as soon as it starts moving."
+msgstr "Заказ #{order_number} на удержании, пока не подтвердится оплата. Напишем, как только он поедет дальше."
+
+msgid "Order #{order_number} is on hold."
+msgstr "Заказ #{order_number} на удержании."
+
+msgid "Order #{order_number} still needs payment."
+msgstr "Заказ #{order_number} всё ещё ждёт оплаты."
+
+msgid "Order #{order_number} was cancelled"
+msgstr "Заказ #{order_number} отменён"
+
+msgid "Order #{order_number} was cancelled."
+msgstr "Заказ #{order_number} отменён."
+
+msgid "Order URL"
+msgstr "Ссылка на заказ"
+
+msgid "Order cancelled"
+msgstr "Заказ отменён"
+
+msgid "Order date"
+msgstr "Дата заказа"
+
+msgid "Order items"
+msgstr "Состав заказа"
+
+msgid "Order number"
+msgstr "Номер заказа"
+
+msgid "Order summary"
+msgstr "Сводка заказа"
+
+msgid "Order total"
+msgstr "Сумма заказа"
+
+msgid "Orders"
+msgstr "Заказы"
+
+msgid "Other"
+msgstr "Другие"
+
+msgid "Out of stock: {product_name}"
+msgstr "Нет в наличии: {product_name}"
+
+msgid "Packed by hand"
+msgstr "Собрано вручную"
+
+msgid "Page background"
+msgstr "Фон страницы"
+
+msgid "Paragraphs, with merge tags"
+msgstr "Абзацы и метки подстановки"
+
+msgid "Password and username"
+msgstr "Пароль и логин"
+
+msgid "Password reset URL"
+msgstr "Ссылка сброса пароля"
+
+msgid "Pay or view the order"
+msgstr "Оплатить или открыть заказ"
+
+msgid "Payment"
+msgstr "Оплата"
+
+msgid "Payment failed"
+msgstr "Оплата не прошла"
+
+msgid "Payment failed for order #{order_number}"
+msgstr "Оплата заказа #{order_number} не прошла"
+
+msgid "Payment method"
+msgstr "Способ оплаты"
+
+msgid "Phone"
+msgstr "Телефон"
+
+msgid "Pinterest"
+msgstr "Pinterest"
+
+msgid "Please leave the parcel with the front desk."
+msgstr "Оставьте посылку на ресепшене."
+
+msgid "Preheader"
+msgstr "Прехедер"
+
+msgid "Preview"
+msgstr "Просмотр"
+
+msgid "Preview with order"
+msgstr "Просмотр на заказе"
+
+msgid "Primary"
+msgstr "Основной цвет"
+
+msgid "Product IDs"
+msgstr "ID товаров"
+
+msgid "Product images"
+msgstr "Фото товаров"
+
+msgid "Product name"
+msgstr "Название товара"
+
+msgid "Products"
+msgstr "Товары"
+
+msgid "Products, totals, tax"
+msgstr "Товары, итоги, налог"
+
+msgid "Qty"
+msgstr "Кол-во"
+
+msgid "Qty %s"
+msgstr "Кол-во: %s"
+
+msgid "Questions about this order? Reply to this email — it comes to us, not a bot."
+msgstr "Вопрос по заказу? Ответьте на это письмо — оно придёт нам, не боту."
+
+msgid "Recipient"
+msgstr "Получатель"
+
+msgid "Redo"
+msgstr "Повторить"
+
+msgid "Refund amount"
+msgstr "Сумма возврата"
+
+msgid "Refund amount: {refund_amount}. It can take a few days to appear on the original payment method."
+msgstr "Сумма возврата: {refund_amount}. На исходный способ оплаты она может прийти через несколько дней."
+
+msgid "Refund for order #{order_number}"
+msgstr "Возврат по заказу #{order_number}"
+
+msgid "Reset password"
+msgstr "Сбросить пароль"
+
+msgid "Reset this email to the starter? The saved design will be deleted."
+msgstr "Вернуть заготовку? Сохранённый макет будет удалён."
+
+msgid "Reset to starter"
+msgstr "Вернуть заготовку"
+
+msgid "Reset your password"
+msgstr "Сбросить пароль"
+
+msgid "Reset your {site_title} password"
+msgstr "Сброс пароля в {site_title}"
+
+msgid "Restore"
+msgstr "Восстановить"
+
+msgid "Revision restored"
+msgstr "Версия восстановлена"
+
+msgid "Revisions"
+msgstr "Версии"
+
+msgid "Right"
+msgstr "Справа"
+
+msgid "Right button"
+msgstr "Кнопка справа"
+
+msgid "Right button link"
+msgstr "Ссылка кнопки справа"
+
+msgid "Right image"
+msgstr "Картинка справа"
+
+msgid "Right text"
+msgstr "Текст справа"
+
+msgid "Right title"
+msgstr "Заголовок справа"
+
+msgid "Russian"
+msgstr "Русский"
+
+msgid "SKU"
+msgstr "Артикул"
+
+msgid "Sample data"
+msgstr "Пример данных"
+
+msgid "Save"
+msgstr "Сохранить"
+
+msgid "Save brand"
+msgstr "Сохранить стиль"
+
+msgid "Saved"
+msgstr "Сохранено"
+
+msgid "Saving…"
+msgstr "Сохранение…"
+
+msgid "Search emails"
+msgstr "Поиск писем"
+
+msgid "Send"
+msgstr "Отправить"
+
+msgid "Send a test"
+msgstr "Отправить тест"
+
+msgid "Sends the current design, even if it is not switched on."
+msgstr "Уйдёт текущий макет, даже если он не включён."
+
+msgid "Set password URL"
+msgstr "Ссылка установки пароля"
+
+msgid "Set your password"
+msgstr "Задать пароль"
+
+msgid "Shipping"
+msgstr "Доставка"
+
+msgid "Shipping heading"
+msgstr "Заголовок доставки"
+
+msgid "Shipping method"
+msgstr "Способ доставки"
+
+msgid "Shop URL"
+msgstr "Ссылка на магазин"
+
+msgid "Show email"
+msgstr "Показать почту"
+
+msgid "Show price"
+msgstr "Показать цену"
+
+msgid "Show store name"
+msgstr "Показать название"
+
+msgid "Show username"
+msgstr "Показать логин"
+
+msgid "Shown next to the subject in the inbox."
+msgstr "Показывается в почте рядом с темой."
+
+msgid "Site default"
+msgstr "Как на сайте"
+
+msgid "Size"
+msgstr "Размер"
+
+msgid "Social"
+msgstr "Соцсети"
+
+msgid "Social links"
+msgstr "Соцсети"
+
+msgid "Sokolova"
+msgstr "Соколова"
+
+msgid "Someone asked to reset the password for {user_login}. If that was you, use the button. If it was not, you can ignore this email."
+msgstr "Кто-то запросил сброс пароля для {user_login}. Если это вы — нажмите кнопку. Если нет — просто проигнорируйте письмо."
+
+msgid "Source"
+msgstr "Источник"
+
+msgid "Space above"
+msgstr "Отступ сверху"
+
+msgid "Space below"
+msgstr "Отступ снизу"
+
+msgid "Spacer"
+msgstr "Отступ"
+
+msgid "Specific IDs"
+msgstr "Конкретные ID"
+
+msgid "Stock"
+msgstr "Склад"
+
+msgid "Stock is running low"
+msgstr "Товар заканчивается"
+
+msgid "Stock notice"
+msgstr "Складское уведомление"
+
+msgid "Stock quantity"
+msgstr "Остаток"
+
+msgid "Store URL"
+msgstr "Адрес сайта"
+
+msgid "Store address"
+msgstr "Адрес магазина"
+
+msgid "Store email"
+msgstr "Почта магазина"
+
+msgid "Store name"
+msgstr "Название магазина"
+
+msgid "Subject"
+msgstr "Тема"
+
+msgid "Subtotal"
+msgstr "Подытог"
+
+msgid "Tahoma"
+msgstr "Tahoma"
+
+msgid "Telegram"
+msgstr "Telegram"
+
+msgid "Test"
+msgstr "Тест"
+
+msgid "Test email limit reached. Try again in an hour."
+msgstr "Лимит тестовых писем исчерпан. Попробуйте через час."
+
+msgid "Test sent"
+msgstr "Тест отправлен"
+
+msgid "Text"
+msgstr "Текст"
+
+msgid "Text color"
+msgstr "Цвет текста"
+
+msgid "Thank you. We have received order #{order_number} and we are getting it ready. This email is the receipt — the next one arrives when it ships."
+msgstr "Спасибо. Заказ #{order_number} получен, мы его собираем. Это письмо — чек. Следующее придёт, когда заказ отправится."
+
+msgid "Thanks for your order"
+msgstr "Спасибо за заказ"
+
+msgid "That file is not a WPP Email Editor export."
+msgstr "Это не файл экспорта WPP Email Editor."
+
+msgid "That revision could not be restored."
+msgstr "Эту версию не удалось восстановить."
+
+msgid "The WooCommerce additional-content field"
+msgstr "Поле «Дополнительный текст» WooCommerce"
+
+msgid "The note left at checkout"
+msgstr "Заметка с оформления заказа"
+
+msgid "The payment did not go through"
+msgstr "Оплата не прошла"
+
+msgid "The payment for order #{order_number} failed. Nothing has shipped. You can try again from the order page."
+msgstr "Оплата заказа #{order_number} не прошла. Ничего не отправлено. Повторить оплату можно со страницы заказа."
+
+msgid "Thickness"
+msgstr "Толщина"
+
+msgid "This design is off. WooCommerce will keep its own template until you switch it on."
+msgstr "Макет выключен. WooCommerce отправит свой шаблон, пока вы его не включите."
+
+msgid "This design replaces the WooCommerce template when the email sends."
+msgstr "Этот макет заменяет шаблон WooCommerce при отправке."
+
+msgid "This email is disabled in WooCommerce, so it will not send until you enable it there."
+msgstr "Это письмо выключено в WooCommerce и не уйдёт, пока вы его там не включите."
+
+msgid "This order was cancelled"
+msgstr "Этот заказ отменён"
+
+msgid "This product is out of stock"
+msgstr "Товара нет в наличии"
+
+msgid "TikTok"
+msgstr "TikTok"
+
+msgid "Title color"
+msgstr "Цвет заголовка"
+
+msgid "Total"
+msgstr "Итого"
+
+msgid "Trebuchet"
+msgstr "Trebuchet"
+
+msgid "Try the payment again"
+msgstr "Повторить оплату"
+
+msgid "Tverskaya 1"
+msgstr "Тверская, 1"
+
+msgid "Two side-by-side notes"
+msgstr "Две колонки рядом"
+
+msgid "Undo"
+msgstr "Отменить"
+
+msgid "Unknown"
+msgstr "Неизвестно"
+
+msgid "Unknown email."
+msgstr "Неизвестное письмо."
+
+msgid "Unsaved changes"
+msgstr "Есть несохранённые правки"
+
+msgid "Up"
+msgstr "Выше"
+
+msgid "Use this code on your next order. It does not apply to this one."
+msgstr "Этот код — на следующий заказ. К этому он не применяется."
+
+msgid "Use this design"
+msgstr "Использовать этот макет"
+
+msgid "Username"
+msgstr "Логин"
+
+msgid "VK"
+msgstr "VK"
+
+msgid "Value"
+msgstr "Значение"
+
+msgid "Verdana"
+msgstr "Verdana"
+
+msgid "Vertical padding"
+msgstr "Отступ сверху и снизу"
+
+msgid "View"
+msgstr "Смотреть"
+
+msgid "View the order"
+msgstr "Открыть заказ"
+
+msgid "View your order"
+msgstr "Посмотреть заказ"
+
+msgid "Visual editor for WooCommerce. The shop keeps sending its own template until you turn a design on."
+msgstr "Визуальный редактор писем WooCommerce. Магазин продолжит отправлять свой шаблон, пока вы не включите макет."
+
+msgid "Visual email editor for WooCommerce. Design transactional emails without editing templates."
+msgstr "Визуальный редактор писем для WooCommerce. Оформляйте транзакционные письма, не правя шаблоны."
+
+msgid "WPP Email Editor"
+msgstr "WPP Email Editor"
+
+msgid "WPP Email Editor needs WooCommerce to design and send emails."
+msgstr "WPP Email Editor нужен WooCommerce: без него нечего оформлять и нечего отправлять."
+
+msgid "We added a note to order #{order_number}."
+msgstr "Мы добавили заметку к заказу #{order_number}."
+
+msgid "We added a note to order #{order_number}. It is quoted below, followed by the order itself."
+msgstr "Мы добавили заметку к заказу #{order_number}. Она ниже, затем сам заказ."
+
+msgid "We have refunded order #{order_number}. The amount below is what left our side."
+msgstr "Мы оформили возврат по заказу #{order_number}. Ниже — сумма, которая ушла с нашей стороны."
+
+msgid "We have your order"
+msgstr "Заказ у нас"
+
+msgid "We need a moment"
+msgstr "Нужна минута"
+
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+msgid "Width"
+msgstr "Ширина"
+
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+msgid "WooCommerce default"
+msgstr "Шаблон WooCommerce"
+
+msgid "WooCommerce is required"
+msgstr "Нужен WooCommerce"
+
+msgid "WordPress could not send the email. Check the site mail setup."
+msgstr "WordPress не смог отправить письмо. Проверьте почту сайта."
+
+msgid "X"
+msgstr "X"
+
+msgid "You do not have permission to design emails."
+msgstr "У вас нет прав оформлять письма."
+
+msgid "You have a new order from {customer_full_name} — #{order_number}, placed on {order_date}."
+msgstr "Новый заказ от {customer_full_name} — #{order_number}, от {order_date}."
+
+msgid "You might also like"
+msgstr "Вам может понравиться"
+
+msgid "YouTube"
+msgstr "YouTube"
+
+msgid "Your account is ready"
+msgstr "Аккаунт готов"
+
+msgid "Your downloads"
+msgstr "Ваши загрузки"
+
+msgid "Your invoice"
+msgstr "Ваш счёт"
+
+msgid "Your refund is on its way"
+msgstr "Возврат уже в пути"
+
+msgid "Your username is {user_login}."
+msgstr "Ваш логин: {user_login}."
+
+msgid "Your {site_title} account"
+msgstr "Аккаунт в {site_title}"
+
+msgid "Your {site_title} order #{order_number} is confirmed"
+msgstr "Заказ #{order_number} в {site_title} подтверждён"
+
+msgid "{customer_full_name} placed order #{order_number}."
+msgstr "{customer_full_name} оформил заказ #{order_number}."
+
+msgid "{product_name} has no stock left. Customers cannot buy it until you restock."
+msgstr "«{product_name}» закончился. Купить его нельзя, пока не пополните склад."
+
+msgid "{product_name} has {stock_quantity} left in stock."
+msgstr "«{product_name}»: на складе осталось {stock_quantity}."
+
+msgid "{product_name} is almost gone. There are {stock_quantity} left."
+msgstr "«{product_name}» почти закончился. Осталось {stock_quantity} шт."
+
+msgid "{product_name} is down to {stock_quantity}."
+msgstr "«{product_name}» осталось {stock_quantity} шт."
+
+msgid "{product_name} is out of stock."
+msgstr "«{product_name}» нет в наличии."
+
+msgid "{product_name} was backordered."
+msgstr "«{product_name}» заказали сверх остатка."
+
+msgid "{product_name} was just ordered on backorder. Current stock: {stock_quantity}."
+msgstr "«{product_name}» только что заказали в предзаказ. Сейчас на складе: {stock_quantity}."
+
+msgid "{site_title}: {order_number}"
+msgstr "{site_title}: заказ {order_number}"

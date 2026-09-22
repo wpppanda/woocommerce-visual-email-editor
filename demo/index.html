@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>wpp-email-editor — WP Panda</title>
+	<link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+<body class="wpp-ee-demo wpp-ee-focus">
+	<div id="wpp-ee-app" class="wpp-ee-app"></div>
+	<script>
+		(function () {
+			var emails = [
+				['customer_processing_order', 'Заказ в обработке', 'Processing order', 'Клиенту, когда заказ оплачен и собирается.', 'Sent when an order is paid and being prepared.', 'customer', 'orders', 'order'],
+				['customer_completed_order', 'Заказ выполнен', 'Completed order', 'Клиенту, когда заказ выполнен.', 'Sent when an order is complete.', 'customer', 'orders', 'order'],
+				['customer_on_hold_order', 'Заказ на удержании', 'Order on hold', 'Клиенту, пока оплата не подтверждена.', 'Sent while payment is unconfirmed.', 'customer', 'orders', 'order'],
+				['customer_refunded_order', 'Возврат', 'Refunded order', 'Клиенту, когда оформлен возврат.', 'Sent when an order is refunded.', 'customer', 'orders', 'order'],
+				['customer_invoice', 'Счёт', 'Invoice', 'Клиенту со счётом или ссылкой на оплату.', 'Sent with an invoice or payment link.', 'customer', 'orders', 'order', true],
+				['customer_note', 'Заметка к заказу', 'Customer note', 'Клиенту, когда магазин оставляет заметку.', 'Sent when the store adds a note.', 'customer', 'orders', 'order'],
+				['new_order', 'Новый заказ', 'New order', 'Администратору о новом заказе.', 'Sent to the shop when an order arrives.', 'admin', 'orders', 'order'],
+				['cancelled_order', 'Отмена заказа', 'Cancelled order', 'Администратору, когда заказ отменён.', 'Sent to the shop when an order is cancelled.', 'admin', 'orders', 'order'],
+				['failed_order', 'Неудачная оплата', 'Failed order', 'Администратору, если оплата не прошла.', 'Sent to the shop when payment fails.', 'admin', 'orders', 'order'],
+				['customer_new_account', 'Новый аккаунт', 'New account', 'Клиенту после создания аккаунта.', 'Sent when a customer account is created.', 'customer', 'accounts', 'account'],
+				['customer_reset_password', 'Сброс пароля', 'Reset password', 'Клиенту со ссылкой на новый пароль.', 'Sent with a password reset link.', 'customer', 'accounts', 'account'],
+				['low_stock', 'Мало на складе', 'Low stock', 'Администратору, когда товар заканчивается.', 'Sent when a product is running low.', 'admin', 'stock', 'stock'],
+				['no_stock', 'Нет в наличии', 'Out of stock', 'Администратору, когда товар закончился.', 'Sent when a product is out of stock.', 'admin', 'stock', 'stock']
+			];
+
+			function storedLocale() {
+				try {
+					var saved = JSON.parse(localStorage.getItem('wpp-ee-demo-settings') || 'null');
+					return saved && saved.uiLocale;
+				} catch (err) {
+					return '';
+				}
+			}
+
+			Promise.all([
+				fetch('../assets/schema.json').then(function (r) { return r.json(); }),
+				fetch('../assets/i18n/ru.json').then(function (r) { return r.json(); })
+			]).then(function (parts) {
+				var schema = parts[0];
+				var ru = parts[1];
+				var locale = storedLocale();
+				var russian = locale !== 'en';
+				var settings = {};
+				Object.keys(schema.globalSettings).forEach(function (key) {
+					settings[key] = schema.globalSettings[key].default;
+				});
+				settings.social = {};
+				(schema.socialNetworks || []).forEach(function (network) {
+					settings.social[network] = '';
+				});
+				settings.uiLocale = russian ? 'ru' : 'en';
+				settings.footerText = '{site_title}<br>{store_address}';
+				settings.primary = '#1c7a46';
+				settings.headerBackground = '#17191d';
+
+				window.WPPEmailEditor = {
+					demo: true,
+					hasWoo: true,
+					version: '1.0.0',
+					adminEmail: 'shop@wppanda.test',
+					schema: schema,
+					i18n: russian ? ru : {},
+					settings: settings,
+					orders: [
+						{ id: 1024, number: '1024', name: russian ? 'Анна Соколова' : 'Anna Sokolova', total: '6 000 ₽', date: russian ? '22 сентября 2026' : '22 Sep 2026' }
+					],
+					sample: {
+						siteTitle: 'WP Panda',
+						orderNumber: '1024',
+						orderDate: russian ? '22 сентября 2026' : '22 Sep 2026',
+						firstName: russian ? 'Анна' : 'Anna',
+						lastName: russian ? 'Соколова' : 'Sokolova',
+						fullName: russian ? 'Анна Соколова' : 'Anna Sokolova',
+						email: 'anna@example.com',
+						phone: '+7 900 000-00-00',
+						payment: russian ? 'Карта' : 'Card',
+						shipping: russian ? 'Курьер' : 'Courier',
+						total: '6 000 ₽',
+						subtotal: '5 400 ₽',
+						shippingTotal: '600 ₽',
+						items: [
+							{ name: russian ? 'Керамический чайник' : 'Ceramic kettle', qty: 1, total: '4 200 ₽', meta: russian ? 'Цвет: песок' : 'Color: sand' },
+							{ name: russian ? 'Льняное полотенце' : 'Linen towel', qty: 2, total: '1 800 ₽', meta: '' }
+						],
+						billing: (russian ? 'Анна Соколова' : 'Anna Sokolova') + '<br>' + (russian ? 'Тверская, 1' : 'Tverskaya 1') + '<br>' + (russian ? 'Москва' : 'Moscow'),
+						shippingAddr: (russian ? 'Анна Соколова' : 'Anna Sokolova') + '<br>' + (russian ? 'Тверская, 1' : 'Tverskaya 1') + '<br>' + (russian ? 'Москва' : 'Moscow'),
+						note: russian ? 'Оставьте посылку на ресепшене.' : 'Please leave the parcel with the front desk.',
+						username: 'anna',
+						productName: russian ? 'Керамический чайник' : 'Ceramic kettle',
+						stock: '2',
+						refund: '1 800 ₽',
+						products: [
+							{ name: russian ? 'Керамический чайник' : 'Ceramic kettle', price: '4 200 ₽' },
+							{ name: russian ? 'Льняное полотенце' : 'Linen towel', price: '900 ₽' },
+							{ name: russian ? 'Чаша для матча' : 'Matcha bowl', price: '2 400 ₽' }
+						]
+					},
+					emails: emails.map(function (row) {
+						return {
+							id: row[0],
+							title: russian ? row[1] : row[2],
+							description: russian ? row[3] : row[4],
+							audience: row[5],
+							group: row[6],
+							kind: row[7],
+							manual: !!row[8],
+							wcEnabled: true,
+							customized: false,
+							live: false
+						};
+					})
+				};
+
+				try {
+					var savedDesigns = JSON.parse(localStorage.getItem('wpp-ee-demo') || '{}');
+					window.WPPEmailEditor.emails.forEach(function (email) {
+						var design = savedDesigns[email.id];
+						if (design) {
+							email.customized = true;
+							email.live = !!design.enabled;
+						}
+					});
+				} catch (err) {
+					/* empty demo store */
+				}
+
+				var script = document.createElement('script');
+				script.src = '../assets/js/editor.js';
+				document.body.appendChild(script);
+			}).catch(function () {
+				document.getElementById('wpp-ee-app').textContent = 'Could not load the editor assets.';
+			});
+		}());
+	</script>
+</body>
+</html>
