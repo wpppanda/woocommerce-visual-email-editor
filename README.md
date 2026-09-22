@@ -1,0 +1,1 @@
+# woocommerce-visual-email-editor
