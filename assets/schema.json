@@ -1,0 +1,384 @@
+{
+  "version": 1,
+  "fonts": [
+    { "id": "Arial, Helvetica, sans-serif", "label": "Arial" },
+    { "id": "Georgia, Times, serif", "label": "Georgia" },
+    { "id": "Verdana, Geneva, sans-serif", "label": "Verdana" },
+    { "id": "Tahoma, Geneva, sans-serif", "label": "Tahoma" },
+    { "id": "Trebuchet MS, Helvetica, sans-serif", "label": "Trebuchet" },
+    { "id": "Courier New, Courier, monospace", "label": "Courier" }
+  ],
+  "groups": [
+    { "id": "layout", "label": "Layout" },
+    { "id": "content", "label": "Content" },
+    { "id": "woo", "label": "WooCommerce" }
+  ],
+  "mergeTags": [
+    { "tag": "{site_title}", "label": "Store name" },
+    { "tag": "{site_url}", "label": "Store URL" },
+    { "tag": "{store_email}", "label": "Store email" },
+    { "tag": "{store_address}", "label": "Store address" },
+    { "tag": "{order_number}", "label": "Order number" },
+    { "tag": "{order_date}", "label": "Order date" },
+    { "tag": "{order_total}", "label": "Order total" },
+    { "tag": "{order_url}", "label": "Order URL" },
+    { "tag": "{payment_method}", "label": "Payment method" },
+    { "tag": "{shipping_method}", "label": "Shipping method" },
+    { "tag": "{customer_first_name}", "label": "First name" },
+    { "tag": "{customer_last_name}", "label": "Last name" },
+    { "tag": "{customer_full_name}", "label": "Full name" },
+    { "tag": "{customer_email}", "label": "Customer email" },
+    { "tag": "{customer_phone}", "label": "Phone" },
+    { "tag": "{user_login}", "label": "Username" },
+    { "tag": "{password_reset_url}", "label": "Password reset URL" },
+    { "tag": "{set_password_url}", "label": "Set password URL" },
+    { "tag": "{my_account_url}", "label": "My account URL" },
+    { "tag": "{shop_url}", "label": "Shop URL" },
+    { "tag": "{product_name}", "label": "Product name" },
+    { "tag": "{stock_quantity}", "label": "Stock quantity" },
+    { "tag": "{refund_amount}", "label": "Refund amount" }
+  ],
+  "socialNetworks": [
+    "instagram",
+    "telegram",
+    "vk",
+    "facebook",
+    "youtube",
+    "x",
+    "tiktok",
+    "pinterest",
+    "whatsapp",
+    "linkedin"
+  ],
+  "emailSettings": {
+    "width": { "type": "int", "control": "number", "label": "Width", "default": 600, "min": 480, "max": 720 },
+    "background": { "type": "color", "control": "color", "label": "Page background", "default": "#f3f1ec" },
+    "contentBackground": { "type": "color", "control": "color", "label": "Card background", "default": "#fffcf8" },
+    "textColor": { "type": "color", "control": "color", "label": "Text", "default": "#3f3a36" },
+    "linkColor": { "type": "color", "control": "color", "label": "Links and buttons", "default": "#1c7a46" },
+    "font": { "type": "font", "control": "font", "label": "Font", "default": "Arial, Helvetica, sans-serif" },
+    "radius": { "type": "int", "control": "range", "label": "Corner radius", "default": 16, "min": 0, "max": 28 }
+  },
+  "globalSettings": {
+    "logoUrl": { "type": "url", "control": "image", "label": "Logo", "default": "" },
+    "logoWidth": { "type": "int", "control": "number", "label": "Logo width", "default": 148, "min": 32, "max": 320 },
+    "primary": { "type": "color", "control": "color", "label": "Primary", "default": "#1c7a46" },
+    "text": { "type": "color", "control": "color", "label": "Text", "default": "#3f3a36" },
+    "muted": { "type": "color", "control": "color", "label": "Muted text", "default": "#8a837a" },
+    "background": { "type": "color", "control": "color", "label": "Page background", "default": "#f3f1ec" },
+    "contentBackground": { "type": "color", "control": "color", "label": "Card background", "default": "#fffcf8" },
+    "headerBackground": { "type": "color", "control": "color", "label": "Header background", "default": "#17191d" },
+    "headerColor": { "type": "color", "control": "color", "label": "Header text", "default": "#f7f4ef" },
+    "font": { "type": "font", "control": "font", "label": "Font", "default": "Arial, Helvetica, sans-serif" },
+    "width": { "type": "int", "control": "number", "label": "Email width", "default": 600, "min": 480, "max": 720 },
+    "radius": { "type": "int", "control": "range", "label": "Corner radius", "default": 16, "min": 0, "max": 28 },
+    "footerText": { "type": "html", "control": "textarea", "label": "Footer", "default": "{site_title}<br>{store_address}" },
+    "uiLocale": { "type": "enum", "control": "select", "label": "Editor language", "default": "site", "values": ["site", "ru", "en"] },
+    "social": { "type": "social", "control": "social", "label": "Social links", "default": {} }
+  },
+  "blocks": {
+    "header": {
+      "group": "layout",
+      "label": "Header",
+      "description": "Logo and store name",
+      "props": {
+        "logoUrl": { "type": "url", "control": "image", "label": "Logo", "default": "" },
+        "logoWidth": { "type": "int", "control": "range", "label": "Logo width", "default": 148, "min": 40, "max": 280 },
+        "showName": { "type": "bool", "control": "toggle", "label": "Show store name", "default": true },
+        "align": { "type": "enum", "control": "align", "label": "Align", "default": "center", "values": ["left", "center", "right"] },
+        "background": { "type": "color", "control": "color", "label": "Background", "default": "#17191d" },
+        "color": { "type": "color", "control": "color", "label": "Text", "default": "#f7f4ef" },
+        "paddingY": { "type": "int", "control": "range", "label": "Vertical padding", "default": 32, "min": 8, "max": 80 },
+        "paddingX": { "type": "int", "control": "range", "label": "Horizontal padding", "default": 32, "min": 8, "max": 64 }
+      }
+    },
+    "heading": {
+      "group": "content",
+      "label": "Heading",
+      "description": "A short title",
+      "props": {
+        "text": { "type": "textarea", "control": "textarea", "label": "Text", "default": "Thanks for your order" },
+        "align": { "type": "enum", "control": "align", "label": "Align", "default": "left", "values": ["left", "center", "right"] },
+        "color": { "type": "color", "control": "color", "label": "Color", "default": "#17191d" },
+        "size": { "type": "int", "control": "range", "label": "Size", "default": 28, "min": 18, "max": 40 },
+        "paddingTop": { "type": "int", "control": "range", "label": "Space above", "default": 28, "min": 0, "max": 64 },
+        "paddingBottom": { "type": "int", "control": "range", "label": "Space below", "default": 4, "min": 0, "max": 40 },
+        "paddingX": { "type": "int", "control": "range", "label": "Horizontal padding", "default": 36, "min": 8, "max": 64 }
+      }
+    },
+    "text": {
+      "group": "content",
+      "label": "Text",
+      "description": "Paragraphs, with merge tags",
+      "props": {
+        "html": { "type": "html", "control": "html", "label": "Text", "default": "<p>Hi {customer_first_name},</p><p>Write the note you actually want them to read.</p>" },
+        "align": { "type": "enum", "control": "align", "label": "Align", "default": "left", "values": ["left", "center", "right"] },
+        "color": { "type": "color", "control": "color", "label": "Color", "default": "#3f3a36" },
+        "size": { "type": "int", "control": "range", "label": "Size", "default": 15, "min": 13, "max": 20 },
+        "paddingY": { "type": "int", "control": "range", "label": "Vertical padding", "default": 8, "min": 0, "max": 40 },
+        "paddingX": { "type": "int", "control": "range", "label": "Horizontal padding", "default": 36, "min": 8, "max": 64 }
+      }
+    },
+    "image": {
+      "group": "content",
+      "label": "Image",
+      "description": "A picture from the media library",
+      "props": {
+        "url": { "type": "url", "control": "image", "label": "Image", "default": "" },
+        "alt": { "type": "text", "control": "text", "label": "Alt text", "default": "" },
+        "href": { "type": "url", "control": "url", "label": "Link", "default": "" },
+        "width": { "type": "int", "control": "range", "label": "Width", "default": 528, "min": 80, "max": 640 },
+        "align": { "type": "enum", "control": "align", "label": "Align", "default": "center", "values": ["left", "center", "right"] },
+        "radius": { "type": "int", "control": "range", "label": "Corner radius", "default": 8, "min": 0, "max": 24 },
+        "paddingY": { "type": "int", "control": "range", "label": "Vertical padding", "default": 8, "min": 0, "max": 40 },
+        "paddingX": { "type": "int", "control": "range", "label": "Horizontal padding", "default": 36, "min": 0, "max": 64 }
+      }
+    },
+    "button": {
+      "group": "content",
+      "label": "Button",
+      "description": "One clear action",
+      "props": {
+        "text": { "type": "text", "control": "text", "label": "Label", "default": "View your order" },
+        "url": { "type": "url", "control": "url", "label": "Link", "default": "{order_url}" },
+        "align": { "type": "enum", "control": "align", "label": "Align", "default": "left", "values": ["left", "center", "right"] },
+        "background": { "type": "color", "control": "color", "label": "Background", "default": "#1c7a46" },
+        "color": { "type": "color", "control": "color", "label": "Text", "default": "#ffffff" },
+        "radius": { "type": "int", "control": "range", "label": "Corner radius", "default": 8, "min": 0, "max": 28 },
+        "paddingTop": { "type": "int", "control": "range", "label": "Space above", "default": 12, "min": 0, "max": 48 },
+        "paddingBottom": { "type": "int", "control": "range", "label": "Space below", "default": 12, "min": 0, "max": 48 },
+        "paddingX": { "type": "int", "control": "range", "label": "Horizontal padding", "default": 36, "min": 8, "max": 64 }
+      }
+    },
+    "divider": {
+      "group": "layout",
+      "label": "Divider",
+      "description": "A quiet line",
+      "props": {
+        "color": { "type": "color", "control": "color", "label": "Color", "default": "#ece7e0" },
+        "thickness": { "type": "int", "control": "range", "label": "Thickness", "default": 1, "min": 1, "max": 6 },
+        "paddingY": { "type": "int", "control": "range", "label": "Vertical padding", "default": 8, "min": 0, "max": 40 },
+        "paddingX": { "type": "int", "control": "range", "label": "Horizontal padding", "default": 36, "min": 0, "max": 80 }
+      }
+    },
+    "spacer": {
+      "group": "layout",
+      "label": "Spacer",
+      "description": "Empty vertical space",
+      "props": {
+        "height": { "type": "int", "control": "range", "label": "Height", "default": 24, "min": 4, "max": 96 }
+      }
+    },
+    "columns": {
+      "group": "layout",
+      "label": "Columns",
+      "description": "Two side-by-side notes",
+      "props": {
+        "paddingY": { "type": "int", "control": "range", "label": "Vertical padding", "default": 8, "min": 0, "max": 40 },
+        "paddingX": { "type": "int", "control": "range", "label": "Horizontal padding", "default": 36, "min": 8, "max": 48 },
+        "gap": { "type": "int", "control": "range", "label": "Gap", "default": 16, "min": 0, "max": 40 },
+        "leftTitle": { "type": "text", "control": "text", "label": "Left title", "default": "Packed by hand" },
+        "leftText": { "type": "textarea", "control": "textarea", "label": "Left text", "default": "Every order leaves the studio with a paper note, not a plastic insert." },
+        "leftImage": { "type": "url", "control": "image", "label": "Left image", "default": "" },
+        "leftButtonText": { "type": "text", "control": "text", "label": "Left button", "default": "" },
+        "leftButtonUrl": { "type": "url", "control": "url", "label": "Left button link", "default": "" },
+        "rightTitle": { "type": "text", "control": "text", "label": "Right title", "default": "A person replies" },
+        "rightText": { "type": "textarea", "control": "textarea", "label": "Right text", "default": "Questions about this order? Reply to this email — it comes to us, not a bot." },
+        "rightImage": { "type": "url", "control": "image", "label": "Right image", "default": "" },
+        "rightButtonText": { "type": "text", "control": "text", "label": "Right button", "default": "" },
+        "rightButtonUrl": { "type": "url", "control": "url", "label": "Right button link", "default": "" },
+        "titleColor": { "type": "color", "control": "color", "label": "Title color", "default": "#17191d" },
+        "textColor": { "type": "color", "control": "color", "label": "Text color", "default": "#3f3a36" }
+      }
+    },
+    "order_meta": {
+      "group": "woo",
+      "label": "Order summary",
+      "description": "Number, date, payment",
+      "props": {
+        "showNumber": { "type": "bool", "control": "toggle", "label": "Order number", "default": true },
+        "showDate": { "type": "bool", "control": "toggle", "label": "Date", "default": true },
+        "showPayment": { "type": "bool", "control": "toggle", "label": "Payment", "default": true },
+        "showShipping": { "type": "bool", "control": "toggle", "label": "Shipping", "default": false },
+        "showEmail": { "type": "bool", "control": "toggle", "label": "Show email", "default": false },
+        "background": { "type": "color", "control": "color", "label": "Background", "default": "#f7f4ef" },
+        "color": { "type": "color", "control": "color", "label": "Value", "default": "#17191d" },
+        "labelColor": { "type": "color", "control": "color", "label": "Label", "default": "#8a837a" },
+        "paddingY": { "type": "int", "control": "range", "label": "Vertical padding", "default": 8, "min": 0, "max": 36 },
+        "paddingX": { "type": "int", "control": "range", "label": "Horizontal padding", "default": 36, "min": 8, "max": 48 }
+      }
+    },
+    "order_table": {
+      "group": "woo",
+      "label": "Order items",
+      "description": "Products, totals, tax",
+      "props": {
+        "showImages": { "type": "bool", "control": "toggle", "label": "Product images", "default": true },
+        "showSku": { "type": "bool", "control": "toggle", "label": "SKU", "default": false },
+        "showMeta": { "type": "bool", "control": "toggle", "label": "Item meta", "default": true },
+        "color": { "type": "color", "control": "color", "label": "Text", "default": "#17191d" },
+        "mutedColor": { "type": "color", "control": "color", "label": "Muted", "default": "#8a837a" },
+        "lineColor": { "type": "color", "control": "color", "label": "Lines", "default": "#ece7e0" },
+        "totalColor": { "type": "color", "control": "color", "label": "Grand total", "default": "#1c7a46" },
+        "paddingY": { "type": "int", "control": "range", "label": "Vertical padding", "default": 8, "min": 0, "max": 36 },
+        "paddingX": { "type": "int", "control": "range", "label": "Horizontal padding", "default": 36, "min": 12, "max": 48 }
+      }
+    },
+    "addresses": {
+      "group": "woo",
+      "label": "Addresses",
+      "description": "Billing and shipping",
+      "props": {
+        "showBilling": { "type": "bool", "control": "toggle", "label": "Billing", "default": true },
+        "showShipping": { "type": "bool", "control": "toggle", "label": "Shipping", "default": true },
+        "headingBilling": { "type": "text", "control": "text", "label": "Billing heading", "default": "Billing" },
+        "headingShipping": { "type": "text", "control": "text", "label": "Shipping heading", "default": "Shipping" },
+        "color": { "type": "color", "control": "color", "label": "Text", "default": "#3f3a36" },
+        "mutedColor": { "type": "color", "control": "color", "label": "Heading", "default": "#8a837a" },
+        "paddingY": { "type": "int", "control": "range", "label": "Vertical padding", "default": 8, "min": 0, "max": 36 },
+        "paddingX": { "type": "int", "control": "range", "label": "Horizontal padding", "default": 36, "min": 12, "max": 48 }
+      }
+    },
+    "downloads": {
+      "group": "woo",
+      "label": "Downloads",
+      "description": "Downloadable product links",
+      "props": {
+        "heading": { "type": "text", "control": "text", "label": "Heading", "default": "Your downloads" },
+        "buttonText": { "type": "text", "control": "text", "label": "Button", "default": "Download" },
+        "hideIfEmpty": { "type": "bool", "control": "toggle", "label": "Hide when empty", "default": true },
+        "color": { "type": "color", "control": "color", "label": "Text", "default": "#17191d" },
+        "paddingY": { "type": "int", "control": "range", "label": "Vertical padding", "default": 8, "min": 0, "max": 36 },
+        "paddingX": { "type": "int", "control": "range", "label": "Horizontal padding", "default": 36, "min": 12, "max": 48 }
+      }
+    },
+    "note": {
+      "group": "woo",
+      "label": "Customer note",
+      "description": "The note left at checkout",
+      "props": {
+        "heading": { "type": "text", "control": "text", "label": "Heading", "default": "Note from the customer" },
+        "hideIfEmpty": { "type": "bool", "control": "toggle", "label": "Hide when empty", "default": true },
+        "background": { "type": "color", "control": "color", "label": "Background", "default": "#f7f4ef" },
+        "color": { "type": "color", "control": "color", "label": "Text", "default": "#3f3a36" },
+        "paddingY": { "type": "int", "control": "range", "label": "Vertical padding", "default": 8, "min": 0, "max": 36 },
+        "paddingX": { "type": "int", "control": "range", "label": "Horizontal padding", "default": 36, "min": 12, "max": 48 }
+      }
+    },
+    "account": {
+      "group": "woo",
+      "label": "Account action",
+      "description": "Password and username",
+      "props": {
+        "intro": { "type": "textarea", "control": "textarea", "label": "Intro", "default": "Your username is {user_login}." },
+        "buttonText": { "type": "text", "control": "text", "label": "Button", "default": "Set your password" },
+        "showUsername": { "type": "bool", "control": "toggle", "label": "Show username", "default": true },
+        "background": { "type": "color", "control": "color", "label": "Background", "default": "#f7f4ef" },
+        "color": { "type": "color", "control": "color", "label": "Text", "default": "#17191d" },
+        "buttonBackground": { "type": "color", "control": "color", "label": "Button", "default": "#1c7a46" },
+        "buttonColor": { "type": "color", "control": "color", "label": "Button text", "default": "#ffffff" },
+        "paddingY": { "type": "int", "control": "range", "label": "Vertical padding", "default": 8, "min": 0, "max": 36 },
+        "paddingX": { "type": "int", "control": "range", "label": "Horizontal padding", "default": 36, "min": 12, "max": 48 }
+      }
+    },
+    "stock": {
+      "group": "woo",
+      "label": "Stock notice",
+      "description": "Low stock, out of stock, backorder",
+      "props": {
+        "intro": { "type": "textarea", "control": "textarea", "label": "Intro", "default": "{product_name} has {stock_quantity} left in stock." },
+        "buttonText": { "type": "text", "control": "text", "label": "Button", "default": "Edit product" },
+        "color": { "type": "color", "control": "color", "label": "Text", "default": "#17191d" },
+        "paddingY": { "type": "int", "control": "range", "label": "Vertical padding", "default": 8, "min": 0, "max": 36 },
+        "paddingX": { "type": "int", "control": "range", "label": "Horizontal padding", "default": 36, "min": 12, "max": 48 }
+      }
+    },
+    "products": {
+      "group": "woo",
+      "label": "Products",
+      "description": "A small product row",
+      "props": {
+        "heading": { "type": "text", "control": "text", "label": "Heading", "default": "You might also like" },
+        "source": { "type": "enum", "control": "select", "label": "Source", "default": "latest", "values": ["latest", "featured", "ids"] },
+        "ids": { "type": "text", "control": "text", "label": "Product IDs", "default": "" },
+        "count": { "type": "int", "control": "range", "label": "Count", "default": 3, "min": 1, "max": 4 },
+        "buttonText": { "type": "text", "control": "text", "label": "Button", "default": "View" },
+        "showPrice": { "type": "bool", "control": "toggle", "label": "Show price", "default": true },
+        "color": { "type": "color", "control": "color", "label": "Text", "default": "#17191d" },
+        "paddingY": { "type": "int", "control": "range", "label": "Vertical padding", "default": 8, "min": 0, "max": 36 },
+        "paddingX": { "type": "int", "control": "range", "label": "Horizontal padding", "default": 36, "min": 12, "max": 48 }
+      }
+    },
+    "coupon": {
+      "group": "content",
+      "label": "Coupon",
+      "description": "A code worth coming back for",
+      "props": {
+        "kicker": { "type": "text", "control": "text", "label": "Kicker", "default": "For next time" },
+        "text": { "type": "textarea", "control": "textarea", "label": "Text", "default": "Use this code on your next order. It does not apply to this one." },
+        "code": { "type": "text", "control": "text", "label": "Code", "default": "AGAIN10" },
+        "background": { "type": "color", "control": "color", "label": "Background", "default": "#e7f3ec" },
+        "color": { "type": "color", "control": "color", "label": "Text", "default": "#145c34" },
+        "align": { "type": "enum", "control": "align", "label": "Align", "default": "left", "values": ["left", "center", "right"] },
+        "paddingY": { "type": "int", "control": "range", "label": "Vertical padding", "default": 8, "min": 0, "max": 36 },
+        "paddingX": { "type": "int", "control": "range", "label": "Horizontal padding", "default": 36, "min": 12, "max": 48 }
+      }
+    },
+    "social": {
+      "group": "content",
+      "label": "Social",
+      "description": "Links, not tracking pixels",
+      "props": {
+        "align": { "type": "enum", "control": "align", "label": "Align", "default": "center", "values": ["left", "center", "right"] },
+        "color": { "type": "color", "control": "color", "label": "Text", "default": "#3f3a36" },
+        "instagram": { "type": "url", "control": "url", "label": "Instagram", "default": "" },
+        "telegram": { "type": "url", "control": "url", "label": "Telegram", "default": "" },
+        "vk": { "type": "url", "control": "url", "label": "VK", "default": "" },
+        "facebook": { "type": "url", "control": "url", "label": "Facebook", "default": "" },
+        "youtube": { "type": "url", "control": "url", "label": "YouTube", "default": "" },
+        "x": { "type": "url", "control": "url", "label": "X", "default": "" },
+        "tiktok": { "type": "url", "control": "url", "label": "TikTok", "default": "" },
+        "pinterest": { "type": "url", "control": "url", "label": "Pinterest", "default": "" },
+        "whatsapp": { "type": "url", "control": "url", "label": "WhatsApp", "default": "" },
+        "linkedin": { "type": "url", "control": "url", "label": "LinkedIn", "default": "" },
+        "paddingY": { "type": "int", "control": "range", "label": "Vertical padding", "default": 8, "min": 0, "max": 36 },
+        "paddingX": { "type": "int", "control": "range", "label": "Horizontal padding", "default": 36, "min": 8, "max": 48 }
+      }
+    },
+    "html": {
+      "group": "content",
+      "label": "HTML",
+      "description": "For the cases the blocks miss",
+      "props": {
+        "html": { "type": "html_rich", "control": "html", "label": "HTML", "default": "<p style=\"margin:0;\">Custom HTML</p>" },
+        "paddingY": { "type": "int", "control": "range", "label": "Vertical padding", "default": 8, "min": 0, "max": 40 },
+        "paddingX": { "type": "int", "control": "range", "label": "Horizontal padding", "default": 36, "min": 0, "max": 48 }
+      }
+    },
+    "additional": {
+      "group": "woo",
+      "label": "Additional content",
+      "description": "The WooCommerce additional-content field",
+      "props": {
+        "color": { "type": "color", "control": "color", "label": "Color", "default": "#3f3a36" },
+        "size": { "type": "int", "control": "range", "label": "Size", "default": 15, "min": 13, "max": 18 },
+        "paddingY": { "type": "int", "control": "range", "label": "Vertical padding", "default": 8, "min": 0, "max": 36 },
+        "paddingX": { "type": "int", "control": "range", "label": "Horizontal padding", "default": 36, "min": 8, "max": 48 }
+      }
+    },
+    "footer": {
+      "group": "layout",
+      "label": "Footer",
+      "description": "Address, legal, a quiet goodbye",
+      "props": {
+        "html": { "type": "html", "control": "html", "label": "Text", "default": "{site_title}<br>{store_address}" },
+        "align": { "type": "enum", "control": "align", "label": "Align", "default": "center", "values": ["left", "center", "right"] },
+        "color": { "type": "color", "control": "color", "label": "Color", "default": "#8a837a" },
+        "background": { "type": "color", "control": "color", "label": "Background", "default": "#f7f4ef" },
+        "size": { "type": "int", "control": "range", "label": "Size", "default": 12, "min": 11, "max": 15 },
+        "paddingY": { "type": "int", "control": "range", "label": "Vertical padding", "default": 22, "min": 8, "max": 48 },
+        "paddingX": { "type": "int", "control": "range", "label": "Horizontal padding", "default": 32, "min": 8, "max": 48 }
+      }
+    }
+  }
+}
